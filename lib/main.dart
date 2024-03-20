@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: const WebViewDemo(),
     );
   }
@@ -60,7 +61,7 @@ class _WebViewDemoState extends State<WebViewDemo> {
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: Text('Google'),
+        title: Text(''),
       ),
       body: WebViewWidget(controller: controller),
     );
